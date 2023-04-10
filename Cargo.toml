@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "programs/*"
+]
+
+[profile.release]
+opt-level = "z"  # Optimize for size.
+lto = true

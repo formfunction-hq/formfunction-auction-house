@@ -1,0 +1,20 @@
+[programs.localnet]
+formfn_auction_house = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+
+[programs.testnet]
+formfn_auction_house = "jzmdMPJhm7Txb2RzYPte6Aj1QWqFarmjsJuWjk9m2wv"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "testnet"
+wallet = "keys/testnet/deployer-keypair.json"
+
+# Token Metadata
+[[test.genesis]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+program = "artifacts/mpl_token_metadata.so"
+
+[scripts]
+test = "./scripts/run-tests.sh"
